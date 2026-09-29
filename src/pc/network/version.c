@@ -72,7 +72,7 @@ const char* get_version_dx(void) {
 // I left the coop function the same for archival reasons :/
 const char* get_version_pluto(void) {
 #if defined(VERSION_US)
-    snprintf(sPlutoVersionString, MAX_VERSION_LENGTH, "Pluto  v%s\nDXCoop v%s", SM64PLUTO_VERSION, SM64COOPDX_VERSION);
+    snprintf(sPlutoVersionString, MAX_VERSION_LENGTH, " Pluto v%s\nDXCoop v%s", SM64PLUTO_VERSION, SM64COOPDX_VERSION);
 #else
     snprintf(sPlutoVersionString, MAX_VERSION_LENGTH, "v%s %s", SM64PLUTO_VERSION, VERSION_REGION);
 #endif
