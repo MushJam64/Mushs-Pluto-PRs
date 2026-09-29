@@ -8,6 +8,7 @@
 static char sVersionString[MAX_VERSION_LENGTH] = { 0 };
 static char sLocalVersionString[MAX_LOCAL_VERSION_LENGTH] = { 0 };
 static char sDxVersionString[MAX_VERSION_LENGTH] = { 0 };
+static char sPlutoVersionString[MAX_VERSION_LENGTH] = { 0 };
 
 const char* get_version(void) {
     if (configCoopCompatibility) {
@@ -65,6 +66,18 @@ const char* get_version_dx(void) {
 #endif
 
     return sDxVersionString;
+}
+
+// Hi guys it's mush with my totally not useless function! 
+// I left the coop function the same for archival reasons :/
+const char* get_version_pluto(void) {
+#if defined(VERSION_US)
+    snprintf(sPlutoVersionString, MAX_VERSION_LENGTH, "Pluto  v%s\nDXCoop v%s", SM64PLUTO_VERSION, SM64COOPDX_VERSION);
+#else
+    snprintf(sPlutoVersionString, MAX_VERSION_LENGTH, "v%s %s", SM64PLUTO_VERSION, VERSION_REGION);
+#endif
+
+    return sPlutoVersionString;
 }
 
 const char* get_game_name(void) {
