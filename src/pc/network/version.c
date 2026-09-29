@@ -74,7 +74,7 @@ const char* get_version_dx(void) {
 const char* get_version_pluto(void) {
 #if defined(VERSION_US)
     #if defined(GIT_HASH) && defined(VERSION_PRERELEASE)
-    snprintf(sPlutoVersionString, MAX_VERSION_LENGTH, " Pluto v%s\nCoopDX v%s\nCommit %s", SATURN_VERSION, SM64COOPDX_VERSION, GIT_HASH);
+    snprintf(sPlutoVersionString, MAX_VERSION_LENGTH, " Pluto v%s\nCoopDX v%s\nCommit " GIT_HASH, SATURN_VERSION, SM64COOPDX_VERSION);
     #else
     snprintf(sPlutoVersionString, MAX_VERSION_LENGTH, " Pluto v%s\nCoopDX v%s", SATURN_VERSION, SM64COOPDX_VERSION);
     #endif
