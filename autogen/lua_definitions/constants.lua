@@ -12613,9 +12613,6 @@ PATCH_VERSION_NUMBER = 0
 --- @type string
 SM64COOPDX_VERSION = "0.2"
 
---- @type string
-SM64PLUTO_VERSION = "1.2"
-
 --- @type integer
 VERSION_NUMBER = 36
 

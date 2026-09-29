@@ -2,7 +2,6 @@
 #define VERSION_H
 
 #define SM64COOPDX_VERSION "0.2"
-#define SM64PLUTO_VERSION "1.2" //should maybe move this somewhere more accessible if this gets PR'd but i really cannot care
 
 #define VERSION_TEXT "beta"
 #define VERSION_NUMBER 36
